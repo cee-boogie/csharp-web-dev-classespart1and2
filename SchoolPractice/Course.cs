@@ -13,5 +13,13 @@ namespace SchoolPractice
 
         };
 
+        public override string ToString()
+        {
+            string roster = string.Join(", ", StudentsById);
+            return $"Course Name: {Name} \n" +
+                $"Teacher: {Teacher} \n" +
+                $"Students: {roster} \n";
+        }
+
     }
 }

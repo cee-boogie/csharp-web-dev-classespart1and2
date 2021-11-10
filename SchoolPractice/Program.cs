@@ -56,21 +56,23 @@ namespace SchoolPractice
 
 
 
-            string roster = string.Join(", ", gt.StudentsById);
+            Console.WriteLine(allison.ToString());
 
-            Console.WriteLine($"Student Name: {christine.Name} \n" +
-                $"Student ID: {christine.StudentId} \n" +
-                $"Credits: {christine.NumberOfCredits} \n" +
-                $"GPA: {christine.Gpa} \n");
+            Console.WriteLine(christine.ToString());
 
+            Console.WriteLine($"Christine's grade level is: {christine.GetGradeLevel()} \n");
 
-            Console.WriteLine($"Course Name: {gt.Name} \n" +
-                $"Teacher: {gt.Teacher} \n" +
-                $"Students: {roster} \n");
+            christine.AddGrade(4, 2);
 
-            Console.WriteLine($"Teacher Name: {missDavid.FirstName + " " + missDavid.LastName} \n" +
-                $"Subject: {missDavid.Subject} \n" +
-                $"Years Teaching: {missDavid.YearsTeaching}");
+            Console.WriteLine(christine.ToString());
+
+            Console.WriteLine(joe.ToString());
+
+            Console.WriteLine(gt.ToString());
+
+            Console.WriteLine(missDavid.ToString());
+
+            
 
         }
     }
